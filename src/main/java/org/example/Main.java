@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
     //practice with a regular expression to take a userinput as a string and break apart into numbers and symbols
-        
+
         Scanner scanner = new Scanner(System.in);
         boolean calculateAgain = true;
 
@@ -42,7 +42,7 @@ public class Main {
             System.out.println("Would you like to calculate again? y) yes or n) no");
             String choice = scanner.nextLine();
             choice.toLowerCase();
-            if (choice.equals("n")) {
+            if (choice.toLowerCase().equals("n")) {
                 calculateAgain = false;
             }
         }
