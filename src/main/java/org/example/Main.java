@@ -17,11 +17,11 @@ public class Main {
         while (calculateAgain) {
             System.out.println("Welcome to THE Calculator!!!");
             System.out.println("PLease enter any numbers followed by: ");
-            System.out.println("+ for addition");
-            System.out.println("- for subtraction");
-            System.out.println("* for multiplication");
-            System.out.println("/ for division");
-            System.out.println("= for equals");
+            System.out.println("+) for addition");
+            System.out.println("-) for subtraction");
+            System.out.println("*) for multiplication");
+            System.out.println("/) for division");
+            System.out.println("=) for equals");
             System.out.println(" Then press enter");
             System.out.println();
             System.out.println("Example: 234+23*34= ");
@@ -34,7 +34,7 @@ public class Main {
             } else {
                 userEntry = userEntry.substring(0, userEntry.length() - 1).trim();
                 try {
-                    System.out.println(userEntry + " " + "=" + calculation(userEntry));
+                    System.out.println(userEntry + " " + "=" + " " + calculation(userEntry));
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
